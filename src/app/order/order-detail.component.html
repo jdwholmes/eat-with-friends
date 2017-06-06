@@ -1,0 +1,67 @@
+<div class="container">
+	<div *ngIf="order">
+		<div class="ms-paper">
+			<div class="row">
+				<side-menu></side-menu>
+
+				<div class="col-md-9 ms-paper-content-container">
+					<div class="ms-paper-content">
+						<h1>Order - {{order.name}}</h1>	
+
+						<div class="panel panel-primary">
+		                    <div class="panel-heading">
+	                      		<h3 class="panel-title">
+	                        		<i class="fa fa-plus"></i> Add Item</h3>
+	                    	</div>
+		                    <div class="panel-body">
+		                      <form class="form-horizontal">
+								  <fieldset>
+								    <div class="form-group col-md-6">
+								      <label for="itemName" class="col-md-2 control-label">Name</label>
+								      <div class="col-md-10">
+								        <input type="text" class="form-control" id="itemName" placeholder="Name" 
+								        	name="itemName" [(ngModel)]="item.name"> </div>
+								    </div>
+								    <div class="form-group col-md-6">
+							      		<label for="itemChoice" class="col-md-2 control-label">Choice</label>
+							      		<div class="col-md-10">
+									        <input type="text" class="form-control" id="itemChoice" placeholder="Item Choice" 
+									        	name="itemChoice" [(ngModel)]="item.choice" />
+						        		</div>
+								    </div>
+								  </fieldset>
+								  <button class="btn btn-raised btn-primary pull-right" (click)="addItem()">Add
+								    <i class="zmdi zmdi-long-arrow-right no-mr ml-1"></i>
+								  </button>
+								</form>
+	                    	</div>
+	                  	</div>
+
+						<div class="card card-primary">
+							<div class="card-header">
+                      			<h3 class="card-title">
+	                        		<i class="zmdi zmdi-format-list-bulleted"></i> Order Items</h3>
+                    		</div>
+
+						    <table class="table table-no-border table-striped">
+						        <thead>
+						        	<tr>
+						        		<th>Name</th>
+						        		<th>Items</th>
+						        	</tr>
+					        	</thead>
+					        	<tbody>
+					        		<tr *ngFor="let item of orderItems">
+			        					<td>{{item.name}}</td>
+			        					<td>{{item.choice}}</td>
+				        			</tr>
+					        	</tbody>
+						    </table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>

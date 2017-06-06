@@ -1,0 +1,58 @@
+<div class="bg-full-page ms-hero-bg-dark ms-hero-img-airplane back-fixed">
+    <div class="mw-500 absolute-center">
+        <div class="card color-dark shadow-6dp animated fadeIn animation-delay-7">
+          <div class="ms-hero-bg-primary ms-hero-img-mountain">
+            <h2 class="text-center no-m pt-4 pb-4 color-white index-1">Login Form</h2>
+          </div>
+          <ul class="nav nav-tabs nav-tabs-full nav-tabs-3 nav-tabs-transparent indicator-primary" role="tablist">
+            <li role="presentation" class="active">
+              <a href="#ms-login-tab" aria-controls="ms-login-tab" role="tab" data-toggle="tab" class="withoutripple">
+                <i class="zmdi zmdi-account"></i> Login</a>
+            </li>
+            <li role="presentation">
+              <a href="#ms-register-tab" aria-controls="ms-register-tab" role="tab" data-toggle="tab" class="withoutripple">
+                <i class="zmdi zmdi-account-add"></i> Register</a>
+            </li>
+            <li role="presentation">
+              <a href="#ms-recovery-tab" aria-controls="ms-recovery-tab" role="tab" data-toggle="tab" class="withoutripple">
+                <i class="zmdi zmdi-key"></i> Recovery</a>
+            </li>
+          </ul>
+          <div class="card-block">
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane fade active in" id="ms-login-tab">
+                <login></login>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="ms-register-tab">
+                <register-user></register-user>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="ms-recovery-tab">
+                <fieldset>
+                  <div class="form-group label-floating">
+                    <div class="input-group">
+                      <span class="input-group-addon">
+                        <i class="zmdi zmdi-account"></i>
+                      </span>
+                      <label class="control-label" for="ms-form-user">Username</label>
+                      <input type="text" id="ms-form-user" class="form-control"> </div>
+                  </div>
+                  <div class="form-group label-floating">
+                    <div class="input-group">
+                      <span class="input-group-addon">
+                        <i class="zmdi zmdi-email"></i>
+                      </span>
+                      <label class="control-label" for="ms-form-email">Email</label>
+                      <input type="email" id="ms-form-email" class="form-control"> </div>
+                  </div>
+                  <button class="btn btn-raised btn-block btn-primary">Send Password</button>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center animated fadeInUp animation-delay-7">
+          <a href="index.html" class="btn btn-white">
+            <i class="zmdi zmdi-home"></i> Go Home</a>
+        </div>
+    </div>
+</div>

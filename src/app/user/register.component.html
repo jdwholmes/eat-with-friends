@@ -1,0 +1,50 @@
+<form>
+  <fieldset>
+    <div class="form-group label-floating">
+      <div class="input-group">
+        <span class="input-group-addon">
+          <i class="zmdi zmdi-email"></i>
+        </span>
+        <label for="registerEmail" class="control-label">Email</label>
+        <input type="email" class="form-control" id="registerEmail" name="email" [(ngModel)]="user.email" />
+      </div>
+    </div>
+    <div class="form-group label-floating">
+      <div class="input-group">
+        <span class="input-group-addon">
+          <i class="zmdi zmdi-account"></i>
+        </span>
+        <label for="registerFirstName" class="control-label">First Name</label>
+        <input type="text" class="form-control" id="registerFirstName" name="firstname" [(ngModel)]="user.firstname" />
+      </div>
+    </div>
+    <div class="form-group label-floating">
+      <div class="input-group">
+        <span class="input-group-addon">
+          <i class="zmdi zmdi-account"></i>
+        </span>
+        <label for="registerLastName" class="control-label">Last Name</label>
+        <input type="text" class="form-control" id="registerLastName" name="lastname" [(ngModel)]="user.lastname" />
+      </div>
+    </div>
+    <div class="form-group label-floating">
+      <div class="input-group">
+        <span class="input-group-addon">
+          <i class="zmdi zmdi-lock"></i>
+        </span>
+        <label for="registerPassword" class="control-label">Password</label>
+        <input type="password" class="form-control" id="registerPassword" name="password2" [(ngModel)]="user.password" />
+      </div>
+    </div>
+    <div class="form-group label-floating">
+      <div class="input-group">
+        <span class="input-group-addon">
+          <i class="zmdi zmdi-lock"></i>
+        </span>
+        <label for="registerPassword2" class="control-label">Confirm Password</label>
+        <input type="password" class="form-control" id="registerPassword2" name="password2" />
+      </div>
+    </div>
+    <button class="btn btn-raised btn-block btn-primary" (click)="register()">Register Now</button>
+  </fieldset>
+</form>

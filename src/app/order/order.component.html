@@ -1,0 +1,14 @@
+<div class="container">
+  <form class="form-horizontal">
+    <fieldset>
+      <h1 class="color-primary text-center">Create Order</h1>
+      <div class="form-group">
+        <label for="name" class="col-md-2 control-label">Name</label>
+        <div class="col-md-10">
+          <input type="text" class="form-control" id="name" name="name"
+            placeholder="Order Name" [(ngModel)]="order.name" /> </div>
+      </div>
+      <button class="btn btn-raised btn-block btn-primary" (click)="create()">Create Order</button>
+    </fieldset>
+  </form>
+</div>

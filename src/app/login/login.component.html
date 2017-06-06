@@ -1,0 +1,25 @@
+<form>
+    <fieldset>
+        <div class="form-group label-floating">
+            <div class="input-group">
+                <span class="input-group-addon">
+                  <i class="zmdi zmdi-account"></i>
+                </span>
+                <label class="control-label" for="ms-form-user">Email</label>
+                <input type="email" class="form-control" id="loginEmail" name="loginEmail" [(ngModel)]="model.email" />
+            </div>
+        </div>
+        <div class="form-group label-floating">
+            <div class="input-group">
+                <span class="input-group-addon">
+                    <i class="zmdi zmdi-lock"></i>
+                </span>
+                <label class="control-label" for="ms-form-pass">Password</label>
+                <input type="password" class="form-control" id="loginPassword" name="loginPassword" [(ngModel)]="model.password" />
+            </div>
+        </div>
+    </fieldset>
+    <button class="btn btn-raised btn-primary btn-block" (click)="login()">Login
+        <i class="zmdi zmdi-long-arrow-right no-mr ml-1"></i>
+    </button>
+</form>

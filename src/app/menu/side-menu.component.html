@@ -1,0 +1,38 @@
+<div class="col-md-3 ms-paper-menu-left-container">
+  <div class="ms-paper-menu-left">
+    <h3 class="ms-paper-menu-title">
+      <i class="zmdi zmdi-apps"></i> User Menu
+      <a role="button" data-toggle="collapse" href="#collapseMenu" aria-expanded="false" aria-controls="collapseMenu" class="withripple">
+        <i class="zmdi zmdi-menu"></i>
+      </a>
+    </h3>
+    <div class="panel-menu collapse">
+      <ul class="panel-group ms-collapse-nav" id="components-nav" role="tablist" aria-multiselectable="true">
+        <li class="panel">
+          <a role="button" data-toggle="collapse" data-parent="#components-nav" href="#details-side" class="collapsed withripple">
+            <i class="fa fa-user"></i> My Details</a>
+            <ul id="details-side" class="panel-collapse collapse" role="tabpanel">
+              <li>
+                <a class="withripple" routerLink="/profile">
+                  <i class="fa fa-pencil"></i> Edit Profile</a>
+              </li>
+            </ul>
+        </li>
+        <li class="panel">
+          <a role="button" data-toggle="collapse" data-parent="#components-nav" href="#orders-side" class="collapsed withripple">
+            <i class="fa fa-calendar"></i> Orders</a>
+            <ul id="orders-side" class="panel-collapse collapse" role="tabpanel">
+              <li>
+                <a class="withripple" routerLink="/order">
+                  <i class="fa fa-plus"></i> New Order</a>
+              </li>
+              <li>
+                <a class="withripple" routerLink="/orders/my-orders">
+                  <i class="fa fa-info"></i> My Orders</a>
+              </li>
+            </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
